@@ -1,0 +1,164 @@
+/* Styles for the report form container */
+.report-form-container {
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+  }
+  
+  
+  /* Styles for the report form */
+  .report-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  
+  /* Heading styles */
+  .report-form-heading {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Input container styles */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 144px;
+    font-family: system-ui;
+    font-weight: bold;
+  }
+  
+  /* Input styles */
+  .report-form-input {
+    display: flex;
+    margin-left: 108px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #000;
+    color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .report-form-input:focus {
+    border-color: #4caf50;
+  }
+  
+  /* File input styles */
+  .report-form-input[type='file'] {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  /* Button styles */
+  .report-form-button {
+    margin-top: 34px;
+    margin-left: 186px;
+    padding: 10px 20px;
+    background-color: #1f9122;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 6px 6px 29px rgb(0 0 0);
+  }
+  
+  .report-form-button:hover {
+    background-color: #000000;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow effect on hover */
+  }
+  
+  /* Upload status styles */
+  .report-form p {
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to form elements */
+  .report-form * {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  
+  /* Login */
+  
+  body{
+  background-color: black;
+  }
+  .loading-page{
+  padding-top: 234px;
+  padding-left: 489px;
+  }
+  .loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin-left: 140px;
+  margin-top: 20px;
+  position: relative;
+  background: currentColor;
+  color: #219703;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+  }
+  
+  .loader::after, .loader::before {
+  content: '';
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader 0.3s  0.45s  linear infinite alternate;
+  }
+  .loader::before {
+  left: -20px;
+  animation-delay: 0s;
+  }
+  
+  @keyframes animloader {
+  0%   { height: 48px} 
+  100% { height: 4px}
+  }
+  
+  
+  
+  .input-container {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .label {
+  margin-bottom: 10px;
+  }
+  
+  .input-field {
+  margin-bottom: 20px;
+  }
